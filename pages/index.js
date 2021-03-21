@@ -1,21 +1,24 @@
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div className={styles.container}>
-      <h1>Home</h1>
-          <div>
-            <ul>
-              <li>
-                <Link href="/clients">
-                  clients
-                </Link>
-              </li>
-            </ul>
-          </div>
+      <h1>Home Page</h1>
+      <ul>
+        <li>
+          <Link href="/portfolio">
+            Portfolio
+          </Link>
+        </li>
+        <li>
+          <Link href="/clients">
+            clients
+          </Link>
+        </li>
+      </ul>
     </div>
   )
 }
 
-export default Home
+export default HomePage
